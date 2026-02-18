@@ -3,12 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Reparaciones Flórez | Expertos en Restauración</title>
+<title>Reparaciones Flórez</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
-html{scroll-behavior:smooth;}
 body{
     margin:0;
     font-family:'Poppins', sans-serif;
@@ -16,23 +15,17 @@ body{
     color:#333;
 }
 
-/* HEADER */
 header{
-    position:fixed;
-    width:100%;
-    top:0;
     background:white;
+    padding:15px 50px;
     display:flex;
     justify-content:space-between;
     align-items:center;
-    padding:15px 60px;
-    box-shadow:0 4px 15px rgba(0,0,0,0.08);
+    box-shadow:0 3px 10px rgba(0,0,0,0.1);
+    position:fixed;
+    width:100%;
+    top:0;
     z-index:1000;
-}
-
-.logo{
-    font-weight:700;
-    font-size:22px;
 }
 
 nav a{
@@ -40,17 +33,16 @@ nav a{
     text-decoration:none;
     color:#333;
     font-weight:500;
-    transition:0.3s;
 }
 
-nav a:hover{
-    color:#25D366;
+section{
+    padding:120px 20px;
+    text-align:center;
 }
 
-/* HERO */
 .hero{
-    height:100vh;
-    background:linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+    height:90vh;
+    background:linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
     url('https://images.unsplash.com/photo-1616486029423-aaa4789e8c9a');
     background-size:cover;
     background-position:center;
@@ -58,127 +50,79 @@ nav a:hover{
     flex-direction:column;
     justify-content:center;
     align-items:center;
-    text-align:center;
     color:white;
-    padding:20px;
 }
 
 .hero h1{
-    font-size:55px;
-    max-width:800px;
-}
-
-.hero p{
-    font-size:20px;
-    margin:20px 0;
-    opacity:0.9;
+    font-size:50px;
 }
 
 .btn{
     background:#25D366;
-    padding:15px 40px;
-    border-radius:50px;
-    text-decoration:none;
+    padding:15px 35px;
+    border-radius:40px;
     color:white;
+    text-decoration:none;
     font-weight:600;
-    transition:0.3s;
+    cursor:pointer;
+    border:none;
 }
 
-.btn:hover{
-    background:#1ebe5d;
-    transform:scale(1.05);
-}
-
-/* SERVICIOS */
-.servicios{
-    padding:120px 20px;
-    text-align:center;
-    background:white;
-}
-
-.servicios h2{
-    font-size:40px;
-    margin-bottom:50px;
-}
-
-.cards{
+.categorias{
     display:flex;
     justify-content:center;
-    gap:40px;
+    gap:30px;
     flex-wrap:wrap;
 }
 
 .card{
-    background:#f8f9fc;
-    width:300px;
+    background:white;
     padding:30px;
+    width:280px;
     border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.08);
-    transition:0.4s;
-}
-
-.card:hover{
-    transform:translateY(-12px);
-    box-shadow:0 15px 35px rgba(0,0,0,0.15);
-}
-
-.card h3{
-    margin-bottom:15px;
-}
-
-/* POR QUÉ ELEGIRNOS */
-.beneficios{
-    padding:100px 20px;
-    background:#f4f6f9;
-    text-align:center;
-}
-
-.beneficios h2{
-    font-size:38px;
-    margin-bottom:40px;
-}
-
-.beneficios p{
-    max-width:700px;
-    margin:auto;
-    font-size:18px;
-}
-
-/* FOOTER */
-footer{
-    background:#111;
-    color:white;
-    text-align:center;
-    padding:30px;
-}
-
-/* WHATSAPP FLOAT */
-.whatsapp{
-    position:fixed;
-    bottom:25px;
-    right:25px;
-    background:#25D366;
-    color:white;
-    padding:15px 18px;
-    border-radius:50%;
-    font-size:22px;
-    text-decoration:none;
-    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+    box-shadow:0 10px 20px rgba(0,0,0,0.08);
+    cursor:pointer;
     transition:0.3s;
 }
 
-.whatsapp:hover{
-    transform:scale(1.1);
+.card:hover{
+    transform:translateY(-10px);
 }
 
-/* RESPONSIVE */
-@media(max-width:768px){
-    header{
-        padding:15px 20px;
-    }
-    .hero h1{
-        font-size:35px;
-    }
+/* SUB SECCIONES */
+.detalle{
+    display:none;
+    padding:100px 20px;
+    background:white;
+}
+
+.paquetes{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    flex-wrap:wrap;
+}
+
+.paquete{
+    background:#f8f9fc;
+    width:280px;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.08);
+}
+
+.volver{
+    margin-top:30px;
+    display:inline-block;
+    cursor:pointer;
+    color:#25D366;
+    font-weight:600;
+}
+
+footer{
+    background:#111;
+    color:white;
+    padding:25px;
 }
 </style>
 </head>
@@ -186,53 +130,104 @@ footer{
 <body>
 
 <header>
-    <div class="logo">Reparaciones Flórez</div>
+    <div><strong>Reparaciones Flórez</strong></div>
     <nav>
         <a href="#inicio">Inicio</a>
         <a href="#servicios">Servicios</a>
-        <a href="#beneficios">Nosotros</a>
     </nav>
 </header>
 
 <section class="hero" id="inicio">
-    <h1>Expertos en reparación y restauración de muebles</h1>
-    <p>Transformamos tus muebles antiguos en piezas como nuevas en Cali</p>
-    <a href="https://wa.me/573105382013" target="_blank" class="btn">Solicitar Cotización</a>
+    <h1>Expertos en Restauración de Muebles</h1>
+    <a href="#servicios" class="btn">Ver Servicios</a>
 </section>
 
-<section class="servicios" id="servicios">
+<section id="servicios">
     <h2>Nuestros Servicios</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>🛋️ Reparación de Sofás</h3>
-            <p>Cambio de espuma, arreglos de estructura y tela.</p>
+    <div class="categorias">
+        <div class="card" onclick="mostrar('sofas')">
+            🛋️ Reparación de Sofás
         </div>
 
-        <div class="card">
-            <h3>🪑 Sillas y Comedores</h3>
-            <p>Refuerzo de patas, tapizado y mantenimiento.</p>
+        <div class="card" onclick="mostrar('sillas')">
+            🪑 Sillas y Comedores
         </div>
 
-        <div class="card">
-            <h3>🛠️ Restauración Completa</h3>
-            <p>Deja tus muebles como nuevos con acabado profesional.</p>
+        <div class="card" onclick="mostrar('completa')">
+            🛠️ Restauración Completa
         </div>
     </div>
 </section>
 
-<section class="beneficios" id="beneficios">
-    <h2>¿Por qué elegirnos?</h2>
-    <p>
-        Más de 10 años de experiencia, materiales de alta calidad y compromiso con cada cliente.
-        Trabajamos con responsabilidad, puntualidad y acabados profesionales.
-    </p>
+<!-- DETALLE SOFAS -->
+<section class="detalle" id="sofas">
+    <h2>Reparación de Sofás</h2>
+    <div class="paquetes">
+        <div class="paquete">
+            <h3>🔧 Reforzar Estructura</h3>
+            <p>Reforzamos la base y estructura interna del mueble.</p>
+        </div>
+
+        <div class="paquete">
+            <h3>🧵 Cambio de Tela y Espuma</h3>
+            <p>Renovamos la espuma y tapizamos completamente.</p>
+        </div>
+    </div>
+    <div class="volver" onclick="volver()">← Volver a Servicios</div>
+</section>
+
+<!-- DETALLE SILLAS -->
+<section class="detalle" id="sillas">
+    <h2>Sillas y Comedores</h2>
+    <div class="paquetes">
+        <div class="paquete">
+            <h3>🔧 Solo Reforzar</h3>
+            <p>Refuerzo de patas y estructura.</p>
+        </div>
+
+        <div class="paquete">
+            <h3>🎨 Pintar y Cambiar Espuma</h3>
+            <p>Pintura profesional y renovación del asiento.</p>
+        </div>
+    </div>
+    <div class="volver" onclick="volver()">← Volver a Servicios</div>
+</section>
+
+<!-- DETALLE COMPLETA -->
+<section class="detalle" id="completa">
+    <h2>Restauración Completa</h2>
+    <div class="paquetes">
+        <div class="paquete">
+            <h3>🧵 Cambio Tela y Espuma</h3>
+            <p>Renovación completa manteniendo el diseño original.</p>
+        </div>
+
+        <div class="paquete">
+            <h3>✨ Cambio de Estilo</h3>
+            <p>Transformamos el diseño del mueble en uno moderno.</p>
+        </div>
+    </div>
+    <div class="volver" onclick="volver()">← Volver a Servicios</div>
 </section>
 
 <footer>
-    © 2026 Reparaciones Flórez - Cali, Colombia
+    © 2026 Reparaciones Flórez - Cali
 </footer>
 
-<a href="https://wa.me/573105382013" target="_blank" class="whatsapp">📲</a>
+<script>
+function mostrar(id){
+    document.getElementById("servicios").style.display="none";
+    document.getElementById(id).style.display="block";
+    window.scrollTo(0,0);
+}
+
+function volver(){
+    document.getElementById("servicios").style.display="block";
+    document.getElementById("sofas").style.display="none";
+    document.getElementById("sillas").style.display="none";
+    document.getElementById("completa").style.display="none";
+}
+</script>
 
 </body>
 </html>
